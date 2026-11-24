@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Bank Ltd. - Banking Utilities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Secure Bank Ltd.</h1>
+    <p class="sub">Online Banking Portal - Basic Calculators</p>
+
+    <div class="box">
+        <h2>1. Loan Eligibility Check</h2>
+        <label>Age:</label>
+        <input type="number" id="age"><br>
+        <label>Monthly Income (Rs.):</label>
+        <input type="number" id="income"><br>
+        <label>Loan Amount (Rs.):</label>
+        <input type="number" id="loanAmt"><br>
+        <label>Credit Score:</label>
+        <input type="number" id="score"><br>
+        <button onclick="checkEligibility()">Check</button>
+        <p class="result" id="eligibleResult"></p>
+    </div>
+
+    <div class="box">
+        <h2>2. EMI Calculator</h2>
+        <label>Loan Amount (Rs.):</label>
+        <input type="number" id="emiPrincipal"><br>
+        <label>Interest Rate (% per year):</label>
+        <input type="number" id="emiRate"><br>
+        <label>Time (years):</label>
+        <input type="number" id="emiYears"><br>
+        <button onclick="showEMI()">Calculate EMI</button>
+        <p class="result" id="emiResult"></p>
+    </div>
+
+    <div class="box">
+        <h2>3. Interest Table</h2>
+        <label>Principal (Rs.):</label>
+        <input type="number" id="intPrincipal"><br>
+        <label>Rate (% per year):</label>
+        <input type="number" id="intRate"><br>
+        <label>Years:</label>
+        <input type="number" id="intYears"><br>
+        <button onclick="showInterestTable()">Show Table</button>
+        <div id="interestResult"></div>
+    </div>
+
+    <div class="box">
+        <h2>4. Account Summary (Monthly Deposit)</h2>
+        <label>Opening Balance (Rs.):</label>
+        <input type="number" id="openBal"><br>
+        <label>Monthly Deposit (Rs.):</label>
+        <input type="number" id="monthDep"><br>
+        <label>Number of Months:</label>
+        <input type="number" id="months"><br>
+        <button onclick="showSummary()">Show Summary</button>
+        <div id="summaryResult"></div>
+    </div>
+
+    <div class="box">
+        <h2>5. Savings Goal</h2>
+        <label>Current Savings (Rs.):</label>
+        <input type="number" id="curSave"><br>
+        <label>Monthly Saving (Rs.):</label>
+        <input type="number" id="monSave"><br>
+        <label>Target Amount (Rs.):</label>
+        <input type="number" id="target"><br>
+        <button onclick="savingsGoal()">Calculate</button>
+        <p class="result" id="goalResult"></p>
+    </div>
+
+    <div class="box">
+        <h2>6. Account Type Details</h2>
+        <label>Select Account:</label>
+        <select id="accType">
+            <option value="savings">Savings</option>
+            <option value="current">Current</option>
+            <option value="salary">Salary</option>
+            <option value="fd">Fixed Deposit</option>
+        </select><br>
+        <button onclick="accountDetails()">Show Details</button>
+        <p class="result" id="accResult"></p>
+    </div>
+
+    <div class="box">
+        <h2>7. Variable Scope Demo</h2>
+        <button onclick="scopeDemo()">Run Demo</button>
+        <pre id="scopeResult"></pre>
+    </div>
+
+    <div class="box">
+        <h2>8. Operators Demo</h2>
+        <label>Balance (Rs.):</label>
+        <input type="number" id="opBal"><br>
+        <label>Withdraw Amount (Rs.):</label>
+        <input type="number" id="opWith"><br>
+        <button onclick="operatorDemo()">Withdraw</button>
+        <pre id="opResult"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Bank Limited</title>
+</head>
+<body>
+    <h2>Loan Eligibility</h2>
+    <form id="loaneligibility">
+        <label for="age">Age : </label><br>
+        <input type="number"  id="age"  name="age">
+        <br><br>
+
+        <label for="mothlyincome">Monthly Income(₹) : </label><br>
+        <input type="number" id="mothlyincome" name="mothlyincome">
+        <br><br>
+        
+        <label for="creditscore">Credit Score : </label><br>
+        <input type="number" id="creditscore" name="creditscore">
+        <br><br>
+
+        <button onclick="checkloaneligibility()">Check Loan Eligibility</button>
+    </form>
+
+    <p id="message"></p>
+    <script src="script.js"></script>
+</body>
+</html> -->

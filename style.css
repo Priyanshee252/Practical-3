@@ -1,0 +1,131 @@
+body {
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    max-width: 1100px;
+    background: #d6d6d6;
+    color: #1a1a1a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 0;
+    padding: 22px 0 6px;
+    font-size: 32px;
+    color: #f0f0f0;
+    background: #141414;
+    border-radius: 8px 8px 0 0;
+}
+
+.sub {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: -25px 0 5px;
+    padding: 0 0 20px;
+    color: #b5b5b5;
+    background: #141414;
+    border-radius: 0 0 8px 8px;
+    border-bottom: 4px solid #8a8a8a;
+}
+
+.box {
+    background: #ececec;
+    border: 1px solid #b0b0b0;
+    border-top: 4px solid #141414;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0 0 15px;
+    padding: 8px 10px;
+    color: #f0f0f0;
+    background: #3a3a3a;
+    border-left: 5px solid #9a9a9a;
+}
+
+label {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 12px;
+}
+
+input, select {
+    width: 48%;
+    padding: 7px;
+    margin-bottom: 12px;
+    border: 1px solid #8a8a8a;
+    border-radius: 4px;
+    background: #f7f7f7;
+    font-size: 15px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #141414;
+    background: #ffffff;
+}
+
+button {
+    padding: 9px 22px;
+    background: #141414;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4d4d4d;
+}
+
+.result {
+    font-weight: bold;
+    color: #141414;
+    background: #cfcfcf;
+    padding: 6px 10px;
+    border-left: 4px solid #141414;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #a0a0a0;
+    padding: 6px;
+    text-align: center;
+}
+
+th {
+    background: #141414;
+    color: #f0f0f0;
+}
+
+tr:nth-child(even) td {
+    background: #d6d6d6;
+}
+
+pre {
+    margin: 15px 0 0;
+    padding: 8px;
+    background: #d6d6d6;
+    font-family: Consolas, monospace;
+    font-size: 15px;
+}
+
+@media (max-width: 800px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+}
